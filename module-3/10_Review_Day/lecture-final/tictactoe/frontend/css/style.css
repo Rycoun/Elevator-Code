@@ -1,0 +1,121 @@
+:root {
+    --border-color: #31081F;
+    --tile-hover-color: #808F85;
+    --background-color: #DCE0D9;
+    --font-color: #31081F;
+}
+
+/* layout and some styles */
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family:'Franklin Gothic Medium', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    margin: 40px 0px;
+}
+
+footer {
+    width: 40vw;
+    display: flex;    
+    justify-content: space-evenly;
+}
+
+footer > * {
+    flex-basis: 33%;
+    text-align: center;
+}
+
+/* game board component */
+#game-board {
+    display: grid;
+    width: 25vw; 
+    height: 25vw;
+    max-width: 600px;
+    max-height: 600px;
+    min-height: 100px;
+
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows:     1fr 1fr 1fr;
+}
+
+#game-board .top-row {
+    border-bottom: 2px solid var(--border-color);
+}
+
+#game-board .left-column {
+    border-right: 2px solid var(--border-color);
+}
+#game-board .right-column {
+    border-left: 2px solid var(--border-color);
+}
+
+#game-board .bottom-row {
+    border-top: 2px solid var(--border-color);
+}
+
+#game-board .tile:hover {
+    background-color: var(--tile-hover-color);
+    cursor: pointer;
+}
+
+#game-board .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i.fa {
+    font-size: 4em;
+}
+
+/* play button */
+button {
+    font-size: 1.15rem;
+    line-height: 2rem;
+    border-radius: 5px;
+    padding: .35em .7em;
+    font-weight: 600;
+    background-color: var(--tile-hover-color);
+    color: var(--background-color);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* score component */
+.score-section {
+    font-size: 1.5rem;
+}
+.score-heading {
+    font-size: 1em;
+}
+.score-text {
+    font-size: 1.25em;
+}
+
+/* utilities */
+.hide {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    i.fa {
+        font-size: 2em;
+    }
+
+    .score-section {
+        font-size: 1rem;
+    }
+}

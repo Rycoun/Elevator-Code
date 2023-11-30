@@ -1,0 +1,111 @@
+body {
+  background: #eceee5;
+}
+
+#title {
+  color: #20263f;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  perspective: 1000px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.cards__single {
+  background: #a64e43;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width:80%;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transition: 0.6s; 
+}
+ 
+.cards__image {
+  text-align: center;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.cards__single.flip {
+  transform: rotate3d(0,1,0, 181deg);
+  -webkit-transform: rotate3d(0,1,0, 181deg);
+} 
+
+.cards__artist,
+.cards__album {
+  color: #20263f;
+}
+
+.cards__front img {
+  margin: 0;
+  height: 250px;
+}
+
+.cards__album {
+  font-style: italic;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  line-height: 21px;
+}
+
+.cards__front,
+.cards__back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.cards__front {
+  height: 100%;
+}
+
+.cards__back {
+  transform: rotate3d(0,1,0, 180deg);
+  -webkit-transform: rotate3d(0,1,0, 180deg);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 10px;
+  color: #20263f;
+}
+
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+    perspective: 1000px;
+    align-items: stretch;
+  }
+  .cards__single {
+    width: 20%;
+  }
+} 

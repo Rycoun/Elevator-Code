@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Reservation</title>
+</head>
+
+<body>
+
+    <a href="#valet">Go to valet checkbox</a>
+
+    <a href="index.html">Go Home</a>
+    
+    <a href="https://google.com">Go to Google</a>
+
+    <form action="/save-reservation" method="post">
+
+        <section>
+            <label for="name">Name:</label>
+            <input name="name" id="name" type="text" placeholder="Enter your name" >
+        </section>
+
+        <section>
+            <label for="guests">How many guests?</label>
+            <input name="guests" id="guests" type="number" min="1" >
+        </section>
+
+        <section>
+            <label for="res-date">Date:</label>
+            <input name="resDate" id="res-date" type="date">
+        </section>
+
+        <section>
+            <label for="res-time">Time:</label>
+            <input name="resTime" id="res-time" type="time">
+        </section>
+
+        <section>
+            <label for="valet">Valet parking?</label>
+            <input name="valet" id="valet" type="checkbox">
+        </section>
+
+        <section>
+            <input type="submit" value="Save Reservation">
+        </section>
+    </form>
+</body>
+
+</html>

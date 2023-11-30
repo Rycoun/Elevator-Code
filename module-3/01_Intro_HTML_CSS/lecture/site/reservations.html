@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Reservation</title>
+</head>
+<body>
+
+    <a href="index.html">Return to the menu</a>
+
+
+    <form action="/save-reservation" method="post">
+
+        
+        <label for="name">Name:</label> 
+        <input id = "name" type="text" placeholder="Enter your name" required>
+
+        <label for="">How Many Guests?:</label>
+        <input name="guests" id="guests" type="number" min="1" placeholder="Enter in numbers" required>
+
+        <label for="res-date">Date:</label>
+        <input name="dates" id="res-date" type="date">
+
+        <label for="res-time">Time:</label>
+        <input name="times" id="res-time" type="time">
+
+        <label for="Valet">Need Valet Parking?</label>
+        <input name="parking" id="Valet" type="checkbox">
+
+        <input type="submit" value="Submit Reservation">
+
+
+    </form>
+</body>
+</html>

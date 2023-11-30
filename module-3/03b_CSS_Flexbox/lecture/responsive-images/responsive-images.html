@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    
+    <style>
+        #svg,
+        #resolution-switching,
+        #art-direction { 
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        #resolution-switching img,
+        #art-direction img {
+            width: 100%;
+        }
+
+        #car2 {
+            font-size: 2rem;
+        }
+
+        #car3 {
+            font-size: 4rem;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--- SVG example -->
+    <section id="svg">
+        <i id="car1" class="fa fa-car"></i>
+        <i id="car2" class="fa fa-car"></i>
+        <i id="car3" class="fa fa-car"></i>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <!--- Resolution switching example -->
+    <section id="resolution-switching">
+        <img srcset="images/resolution-switching/Death-Valley@1x.jpeg 500w,
+                     images/resolution-switching/Death-Valley@2x.jpeg 1000w,
+                     images/resolution-switching/Death-Valley@4x.jpeg 2000w"
+
+             src="images/resolution-switching/Death-Valley@4x.jpeg" 
+             alt="Death Valley">
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Art Direction example -->
+    <section id="art-direction">
+        <picture>
+            <source srcset="images/art-direction/landscape-cropped.jpg"
+                    media="(max-width: 600px)">
+            <img src="images/art-direction/landscape-full.jpg" alt="guy with landscape">
+        </picture>
+    </section>
+</body>
+</html>

@@ -1,0 +1,133 @@
+:root {
+    --card-spacing: 8px;
+    --color-white: #fff;
+}
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(#858c90, #bbb);
+    background-attachment: fixed;
+    margin:0;
+}
+
+body > * {
+    padding: 16px;
+}
+
+header {
+    box-sizing: border-box;
+    background: #858c90;
+    color: #ffffffcc;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+}
+
+header > h1 {
+    font-size: 1.1rem;
+}
+
+header > p {
+    font-size: 0.9rem;
+    padding-left: 20px;
+}
+
+header > h1, 
+header > p {
+    border-right: 1px solid rgb(255, 255, 255, 0.5);
+    display: inline-block;
+    padding-right: 20px;
+
+    /* padding: 0 20px 0 20px;
+    padding: 0 20px; */
+}
+
+header > p:last-child {
+    border-right: none;
+}
+
+
+#trello-board {
+    margin-top: 50px;
+    white-space: nowrap;
+}
+
+.trello-list {
+    background-color: #ddd;
+    border-radius: 2px 3px 2px 3px;
+    display: inline-block;
+    margin-right: 10px; 
+    width: 300px;
+    white-space: normal;
+    vertical-align: top;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: var(--card-spacing);
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+.trello-list li.card {
+    background-color: var(--color-white);
+    font-size: .9rem;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: var(--card-spacing);
+}
+
+.trello-list li.card:hover {
+    background-color: #f5f6f7;
+    color: #092d42;
+    cursor: pointer;
+}
+
+.trello-list li.card:last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    border-radius: 3px;
+    display: inline-block;
+    height: 8px;
+    width: 35px;
+    vertical-align: top;
+}
+
+.label.general {
+    background-color: orange;
+}
+
+.label.pathway {
+    background-color: red;
+}
+
+.label.individual {
+    background-color: green;
+}
+
+.label.pair {
+    background-color: teal;
+}
+
+a {
+    box-sizing: border-box;
+    color: #999;
+    display: inline-block;
+    font-size: .8rem;
+    padding: var(--card-spacing);   
+    text-decoration: none;
+    width: 100%;
+}
+
+a:hover {
+    background-color: rgb(9, 45, 66, 0.1);
+}

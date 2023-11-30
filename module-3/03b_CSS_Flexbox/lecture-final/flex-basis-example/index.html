@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    
+    <aside>
+        <section>
+            <div>Items are sized to their content unless overridden using width or flex-basis.</div>
+            <div>Here we are using a width of 1.5em.  (1.5 * 40 = 60px)</div>
+            <div>The container has lots of extra space when not using flex-grow</div>
+        </section>
+    </aside>
+    <main>
+        <section class="box box-left">
+            1
+        </section>
+
+        <section class="box box-right">
+            2
+        </section>
+    </main>
+
+    <aside>
+        <section class="three">flex-grow: 1</section>
+        <section class="four">flex-grow: 2</section>
+    </aside>
+    <main>
+        <section class="box box-left three">
+            3
+        </section>
+
+        <section class="box box-right four">
+            4
+        </section>
+    </main>
+    
+
+    <aside>
+        <section class="five">
+            <div>flex-basis: 200px</div>
+            <div>flex-grow: 1</div>
+        </section>
+        <section class="six">
+            <div>flex-basis: 100px</div>
+            <div>flex-grow: 2</div>
+        </section>
+    </aside>
+    <main>
+        <section class="box box-left five">
+            5
+        </section>
+
+        <section class="box box-right six">
+            6
+        </section>
+    </main>
+
+
+
+    <div class="container-summary">
+        Container Widths: <span id="container-widths"></span>
+    </div>
+
+
+    <script>
+        function updateBoxWidths() {
+            const main = document.getElementsByTagName('main')[0];
+            const containerWidth = document.getElementById('container-widths');
+            containerWidth.innerText = main.clientWidth;
+
+            const boxes = document.getElementsByClassName('box');
+            for(box of boxes) {
+                box.innerText = box.clientWidth;
+            }
+        }
+        window.addEventListener('resize', () => {
+            updateBoxWidths();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => { 
+            updateBoxWidths();
+         });
+    </script>
+</body>
+</html>

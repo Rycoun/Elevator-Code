@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe!</h1>
+    </header>
+
+    <section>
+        <span id="current-player">X</span>'s turn...
+    </section>
+
+    <main id="game-board">
+        <section class="tile top-row left-column" data-row="1" data-column="1">
+            <i class="fa"></i>
+        </section>
+        <section class="tile top-row center-column" data-row="1" data-column="2">
+            <i class="fa"></i>
+        </section>
+        <section class="tile top-row right-column" data-row="1" data-column="3">
+            <i class="fa"></i>
+        </section>
+
+        <section class="tile center-row left-column" data-row="2" data-column="1">
+            <i class="fa"></i>
+        </section>
+        <section class="tile center-row center-column" data-row="2" data-column="2">
+            <i class="fa"></i>
+        </section>
+        <section class="tile center-row right-column" data-row="2" data-column="3">
+            <i class="fa"></i>
+        </section>
+
+        <section class="tile bottom-row left-column" data-row="3" data-column="1">
+            <i class="fa"></i>
+        </section>
+        <section class="tile bottom-row center-column" data-row="3" data-column="2">
+            <i class="fa"></i>
+        </section>
+        <section class="tile bottom-row right-column" data-row="3" data-column="3">
+            <i class="fa"></i>
+        </section>
+    </main>
+    
+    <button id="btn-play-again">Play Again?</button>
+
+    <footer>
+        <section id="score-player-1" class="score-section">
+            <h2 class="score-heading">X Wins</h2>
+            <p class="score-text">0</p>
+        </section>
+
+        <section id="score-ties" class="score-section">
+            <h2 class="score-heading">Ties</h2>
+            <p class="score-text">0</p>
+        </section>
+
+        <section id="score-player-2" class="score-section">
+            <h2 class="score-heading">O Wins</h2>
+            <p class="score-text">0</p>
+        </section>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

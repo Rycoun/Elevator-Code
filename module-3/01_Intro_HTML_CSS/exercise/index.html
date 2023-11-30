@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Fan Page</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            background-color: #000;
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section a {
+            color: #00f;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my Star Wars Fan Page!!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#forum">Forum</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#light-side">Light Side</a></li>
+            <li><a href="dark-side-info.html">Dark Side</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Do you like Star Wars? yea me too. Welcome to my website!</p>
+        <img src="img/star-wars.png" alt="landing-pic" width="35%">
+    </section>
+
+    <section id="news">
+        <h2>News</h2>
+        <p>Stay up to date with the latest Star Wars news and updates here on my website, we have the best sources for
+            our information</p>
+
+    </section>
+
+    <section id="forum">
+        <h2>Forum</h2>
+        <p>Join the discussion with other super cool Star Wars fans on our forums coming soon!!!!</p>
+
+    </section>
+
+    <section id="light-side">
+        <h2><em>Light Side</em></h2>
+        <p>Explore the ways of the <em>Light Side</em> of the Force. <a href="light-side-info.html">Sadly, didnt have
+                time to do this one :/</a></p>
+    </section>
+
+    <section id="dark-side">
+        <h2><em>Dark Side</em></h2>
+        <p>Embrace the power of the <em>Dark Side</em>. <a href="dark-side-info.html">I work tho! Click me!!</a></p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Have questions or suggestions for my website? contact me at <a
+                href="starwarslover66@gmail.com">starwarsl0v3r66@gmail.com</a>.</p>
+    </section>
+    <section id="newsletter">
+        <h2>Sign up for my Newsletter to <b>always</b> stay up to date!</h2>
+        <form action="i-have-nothing-to-run-lol" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </section>
+
+</body>
+
+</html>

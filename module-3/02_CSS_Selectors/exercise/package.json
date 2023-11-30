@@ -1,0 +1,12 @@
+{
+  "name": "css-selectors-exercise",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cypress open",
+    "test-headless": "cypress run --headless"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "8.2.0"
+  }
+}

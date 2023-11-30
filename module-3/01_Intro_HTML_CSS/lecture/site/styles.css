@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+p {
+    text-transform: uppercase;
+}
+img {
+    height: 150px;
+
+}
+#veggies {
+    height: 65px;
+}
