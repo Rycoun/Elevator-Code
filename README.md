@@ -3,5 +3,5 @@
 
 
 ## Copyright
-
-Per the Acknowledgment of Liability Intellectual Property Ownership Agreement, all materials, lectures, and exercises delivered by Tech Elevator are solely owned by Tech Elevator, and you make no claim to any right to distribute or profit from the content herein. Tech Elevator retains all rights, title and interest in and to all related information, content, data, exams, materials, software, and all copyrights, patent rights, trademark rights and other proprietary rights therein. All rights not expressly granted by Tech Elevator to you are expressly reserved to Tech Elevator.
+# Hello! My names Ryan, an im a new Software Developer!
+Enrolling into Tech Elevator in Pittsburgh in 2023 has jump-started my journey into become a Full-Stack Developer making applications
